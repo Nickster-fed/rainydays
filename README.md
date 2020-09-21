@@ -1,2 +1,5 @@
 # rainydays
-Rainydays - a new start, semester project
+Rainydays - a new beginning!
+
+
+
