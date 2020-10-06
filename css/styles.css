@@ -2,6 +2,9 @@ body {
     background: green;
 }
 
+header {
+    background: #000;
+}
 
 h1 {
     font-size: 5rem;
@@ -26,19 +29,16 @@ h1 {
 NAVIGATION
 */
 
-nav li {
+nav {
     display: inline-block;
 }
 
-a.navleft {
-    text-decoration: underline;
-    padding: 0px;
-    color: purple;
+.navleft {
+    color: #FFF;
+    font-size: 1rem;
+
 }
 
-ul.navright {
-    text-decoration: none;
-    padding: 40px;
-    color: orange;
+.navright {
+    color: #0F0;
 }
-
