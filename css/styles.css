@@ -7,3 +7,33 @@ h1 {
     font-size: 5rem;
     color: blue;
 }
+
+
+/* FONTS 
+*/
+
+/* Setting rule due to the fact that my chosen fonts are not web safe
+- Relative file path
+
+@font-face {
+    font-family: "Open Sans";
+    src:
+}*/
+
+
+
+/* 
+NAVIGATION
+*/
+nav {
+    display: inline-block;
+}
+nav .navleft {
+    text-decoration: none;
+    padding: 0px;
+}
+
+nav .navright {
+    text-decoration: none;
+    padding: 40px;
+}
