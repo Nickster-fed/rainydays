@@ -30,13 +30,15 @@ nav li {
     display: inline-block;
 }
 
-nav a.navleft {
+a.navleft {
     text-decoration: underline;
     padding: 0px;
+    color: purple;
 }
 
-nav ul.navright {
+ul.navright {
     text-decoration: none;
     padding: 40px;
+    color: orange;
 }
 
