@@ -30,14 +30,12 @@ nav li {
     display: inline-block;
 }
 
-nav ul li a .navleft {
-    display: inline-block;
+nav a.navleft {
     text-decoration: underline;
     padding: 0px;
 }
 
-nav ul .navright {
-    display: inline-block;
+nav ul.navright {
     text-decoration: none;
     padding: 40px;
 }
