@@ -25,9 +25,7 @@ h1 {
 /* 
 NAVIGATION
 */
-nav {
-    display: inline-block;
-}
+
 nav .navleft {
     text-decoration: none;
     padding: 0px;
@@ -36,4 +34,8 @@ nav .navleft {
 nav .navright {
     text-decoration: none;
     padding: 40px;
+}
+
+nav {
+    display: inline-block;
 }
