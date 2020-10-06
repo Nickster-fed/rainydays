@@ -27,15 +27,14 @@ NAVIGATION
 */
 
 nav .navleft {
+    display: inline-block;
     text-decoration: none;
     padding: 0px;
 }
 
 nav ul .navright {
+    display: inline-block;
     text-decoration: none;
     padding: 40px;
 }
 
-nav {
-    display: inline-block;
-}
