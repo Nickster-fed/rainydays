@@ -31,7 +31,7 @@ nav .navleft {
     padding: 0px;
 }
 
-nav .navright {
+nav ul .navright {
     text-decoration: none;
     padding: 40px;
 }
