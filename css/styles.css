@@ -26,7 +26,7 @@ h1 {
 NAVIGATION
 */
 
-nav .navleft {
+nav ul li .navleft {
     display: inline-block;
     text-decoration: none;
     padding: 0px;
