@@ -1,0 +1,315 @@
+/*
+Import fonts
+- Bebas Neue regular
+- montserrat light 300, regular 400, medium 500, semi-bold 600, bold 700
+
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #707070;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+/* NAV */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+ 
+}
+
+.menu .logo {
+    width: 120px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu a {
+    font-family: "Bebas Neue";
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+.menu a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.menu li.current {
+    border: 2px solid rgba(255,236,219,0.6);
+}
+
+#important {
+    color: #404040;
+}
+
+
+
+
+
+/* Section - Season Jacket */
+.link_season {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: medium;
+    font-size: 0.8rem;
+    text-decoration: none; 
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 10%;
+    padding: 5px 10px;
+    background: #ffecdb;
+}
+
+.link_season:hover {
+    background: rgba(255,236,219,0.6)
+}
+
+
+
+section.season_jacket {
+    width: 100%;
+    height: 590px;
+}
+
+section #season_jacket_bg {
+    width: 100%;
+    height: 400px;
+    background: url(/images/section_season_jacket3.jpg) no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+
+.season_jacket .container {
+    margin-top: 20px;
+    background: rgba(255,236,219,0.6);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    justify-content: flex-end;
+    padding-bottom: 20px;
+     
+}
+
+.container h2 {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: Bold;
+    margin-bottom: 20px;
+}
+
+.season_jacket, .container p {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.season_jacket .link_season {
+    margin-top: 10px;
+}
+
+
+
+
+/* Season Picker */
+
+.season_pick {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    background-color: rgba(255,236,219,0.6);
+    padding: 20px 20px;
+}
+
+
+.season_pick img {
+    max-width: 100%; 
+    height: 130px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+/* Contact us */
+
+
+.contact .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    justify-content: stretch;
+
+
+}
+
+.contact h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #727273;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+/*
+logo widt original - 150/60
+*/
+/*
+.logo {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+
+}
+/*
+body {
+    background-image: -webkit-linear-gradient( #727273 , #BEBDBF);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+/*
+.nav__bar__links{
+    list-style: none;
+
+}
+
+.nav__bar__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__bar__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__bar__links li a:hover {
+    color: #fff
+}
+
+button {
+    padding: 6px 18px;
+    
+    border: 5px;
+    border-width: 2px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(255,255,255,0.8);   
+}
+
+
+
+/*
+Images
+*/
+
+
+
+
+/* FONTS 
+*/
+
+/* Setting rule due to the fact that my chosen fonts are not web safe
+- Relative file path
+
+@font-face {
+    font-family: "Open Sans";
+    src:
+}*/
+/*
+main section {
+    background-image: url(../images/home-background.jpg);
+    background-size: cover;
+    background-position: left;
+    min-width: 400px;
+    min-height: 500px;
+}
+
+
+
+/* 
+NAVIGATION
+*/
+
+
+/* Contact form */
+/*
+.form__input {
+    display: block;
+}
+
+
