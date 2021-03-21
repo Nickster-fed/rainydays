@@ -7,6 +7,9 @@
     <meta name="description" content="A descirption for search engines.">
     <script src="https://kit.fontawesome.com/1dc9a53691.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_about.css">
+    <!-- Hotjar Tracking Code for https://rainydayspro.netlify.app -->
+
   </head>
 
 
@@ -45,8 +48,29 @@
         </section>
 
         <section class="contact_form">
-            <form>
-
+            <form action="#" class="contact" id="contact">
+                <div class="name">
+                    <label>Your fullname</label>
+                    <input name="fullname" id="name" placeholder="Name">
+                    <div class="error_text" id="nameError">*Not enough characters</div>
+                </div>
+                <div class="mob_num">
+                    <label>Must be a number</label>
+                    <input name="mobile" id="mobile" placeholder="Mobile Number">
+                    <div class="error_text" id="mobileError">*Not a real phone number</div>
+                </div>
+                <div class="email">
+                    <label>Must be an existing email address</label>
+                    <input name="email" id="email" placeholder="Email address">
+                    <div class="error_text" id="emailError">*Not enough characters</div>
+                </div>
+                <div class="information">
+                    <label>Minimum length of 20 character(s)</label>
+                    <textarea class="textarea" id="textarea" placeholder="Your enquiry...">
+                    <div class="error_text" id="addressError">*Not enough characters</div>
+                </div>
+        
+                <button>Submit</button>
             </form>
         </section>
 

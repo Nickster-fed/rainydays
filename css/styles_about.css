@@ -1,0 +1,24 @@
+
+
+.linked {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_links {
+    display: flex;
+}
+
+.about_links a {
+    font-size: 1rem;;
+}
+
+
+
+.contact_form {
+    height: auto;
+    display: flex;
+    margin: 2rem 0rem;
+}
+
