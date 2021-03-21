@@ -7,121 +7,173 @@
     <meta name="description" content="A descirption for search engines.">
     <script src="https://kit.fontawesome.com/1dc9a53691.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_jacket.css">
   </head>
 
 
   <body>
-    
     <header>
     <!--Navigation-->
       <nav class="menu">
-        <img src="images/logo-website-final3.png" class="logo" alt="This is the rainydays logo.">
+        <div class="image_holder">
+            <img src="images/logo-website-final3.png" class="logo" alt="This is the rainydays logo.">
+        </div>
+    
         
         <ul class="menu_links_center">
-          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a id="important" href="jackets.html">Jackets</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li id="current"><a href="jackets.html">Jackets</a></li>
+          <li><a href="contact.html">FAQs</a></li>
         </ul>
 
         <ul class="menu_icons_right">
           <li><a href="#"><i class="fas fa-search"></i></a></li>
-          <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+          <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
           <li><a href="sign_in.html"><i class="fas fa-user"></i></a></li>
 
         </ul>
-      </nav>
-    </header>
+      </nav> 
+    </header> 
 
-    <div class="container_jackets">
-        <section id="winter_title">
-            <h1>Winter</h1>
-        </section>
-        <section class="nested" id="winter_jacket">
-            <div class="images">
-              <img src="images/Jacket1.png">
-            </div>
-            <div>
-              <div class="titled">
-                Jacket
-              </div>
-              <div class="infor">
+    <section class="jacket_options">
+      <div class="jacket_title">
+        <h1>Collection</h1>
+      </div>
 
-              </div>
-              <div class="shop">
-                <button><a href="cart.html">Shop</a></button>
-              </div>
-              
-            </div>
-        </section>
-        <section id="spring_title">
-          <h1>Spring</h1>
+      <div class="winter_sel sel" id="winter_jacket">
+        <div class="jacket_intro">
+          <h3>Winter</h3>
+        </div>
 
-        </section>
-        <section class="nested" id="spring_jacket">
-          <div class="images">
-            <img src="images/Jacket1.png">
+        <div class="jacket_image">
+          <img src="images/Jacket_final.jpg">
+        </div>
+
+        <div class="jacket_description">
+          <h4>M´s Summit Pro</h4>
+          <p>
+            With a total re-design we would like to introduse the new Summit Pro jacket that will handle any climatic hurdle. 
+          </p>
+        </div>
+
+        <div class="add_to_cart">
+          <div class="price">
+            <h4><span>$</span>129.99</h4>
           </div>
-          <div>
-            <div class="titled">
-
-            </div>
-            <div class="infor">
-
-            </div>
-            <div class="shop">
-              <button><a href="cart.html">Shop</a></button>
-            </div>
-            
+          <div class="buy">
+            <a href="#" class="buy_btn">Buy now</a>
           </div>
-        </section>
-        <section id="summer_title">
-          <h1>Summer</h1>
+        </div>
+      </div>
 
-        </section>
-        <section class="nested" id="summer_jacket">
-          <div>
+      <!--Spring-->
+      <div class="winter_sel sel" id="winter_jacket">
+        <div class="jacket_intro">
+          <h3>Winter</h3>
+        </div>
 
+        <div class="jacket_image">
+          <img src="images/Jacket_final.jpg">
+        </div>
+
+        <div class="jacket_description">
+          <h4>M´s Summit Pro</h4>
+          <p>
+            With a total re-design we would like to introduse the new Summit Pro jacket that will handle any climatic hurdle. 
+          </p>
+        </div>
+
+        <div class="add_to_cart">
+          <div class="price">
+            <h4><span>$</span>129.99</h4>
           </div>
-          <div>
-            <div class="titled">
-
-            </div>
-            <div class="infor">
-
-            </div>
-            <div class="shop">
-              <button><a href="cart.html">Shop</a></button>
-            </div>
-            
+          <div class="buy">
+            <a href="#" class="buy_btn">Buy now</a>
           </div>
-        </section>
-        <section id="autumn_title">
-          <h1>Autumn</h1>
+        </div>
+      </div>
 
-        </section>
-        <section class="nested" id="autumn_jacket">
-          <div>
+      <!--Summer-->
+      <div class="winter_sel sel" id="winter_jacket">
+        <div class="jacket_intro">
+          <h3>Winter</h3>
+        </div>
 
+        <div class="jacket_image">
+          <img src="images/Jacket_final.jpg">
+        </div>
+
+        <div class="jacket_description">
+          <h4>M´s Summit Pro</h4>
+          <p>
+            With a total re-design we would like to introduse the new Summit Pro jacket that will handle any climatic hurdle. 
+          </p>
+        </div>
+
+        <div class="add_to_cart">
+          <div class="price">
+            <h4><span>$</span>129.99</h4>
           </div>
-          <div>
-            <div class="titled">
-
-            </div>
-            <div class="infor">
-
-            </div>
-            <div class="shop">
-              <button><a href="cart.html">Shop</a></button>
-            </div>
-            
+          <div class="buy">
+            <a href="cart.html" class="buy_btn">Buy now</a>
           </div>
-        </section>
-        
+        </div>
+      </div>
+
+      <!--Autumn-->
+      <div class="winter_sel sel" id="winter_jacket">
+        <div class="jacket_intro">
+          <h3>Winter</h3>
+        </div>
+
+        <div class="jacket_image">
+          <img src="images/Jacket_final.jpg">
+        </div>
+
+        <div class="jacket_description">
+          <h4>M´s Summit Pro</h4>
+          <p>
+            With a total re-design we would like to introduse the new Summit Pro jacket that will handle any climatic hurdle. 
+          </p>
+        </div>
+
+        <div class="add_to_cart">
+          <div class="price">
+            <h4><span>$</span>129.99</h4>
+          </div>
+          <div class="buy">
+            <a href="#" class="buy_btn">Buy now</a>
+          </div>
+        </div>
+      </div>
+
+      
+    
+    </section>
 
 
-    </div>
-
+    <footer>
+      <div class="footer_wrapper">
+          <div class="letter_signon">
+              <h3>Sign on to our newsletter</h3>
+              <input class="email" type="email" placeholder="Your email address">
+              <button class="button" type="submit">Submit</button>
+          </div>
+          <div class="quick_links">
+              <h3>Useful links</h3>
+              <ul class="footer_links">
+                  <li><a>Jackets</a></li>
+                  <li><a>About</a></li>
+                  <li><a>FAQ´s</a></li>
+                  <li><a>Checkout</a></li>
+              </ul>
+          </div>
+          <div class="contact_details">
+              <h3>Contact us</h3>
+          </div>
+      </div>
+  </footer>
 
 
 

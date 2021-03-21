@@ -1,0 +1,68 @@
+
+
+
+.jacket_options {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jacket_title, .jacket_description {
+    margin: 2rem 0rem;
+} 
+
+
+.jacket_intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.jacket_intro h3 {
+    color: white;
+}
+
+
+.jacket_image  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.jacket_image img {
+    width: 60%;
+    
+}
+
+.jacket_description {
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.jacket_description h4 {
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.add_to_cart {
+    margin-bottom: 4rem;
+}
+
+.buy {
+    border: 1px solid white;
+    padding: 0.4rem 1rem;
+
+}
+
+.buy a {
+    font-size: 1rem;
+}

@@ -9,851 +9,307 @@
     box-sizing: border-box;
 }
 
+html {
+    background: white;
+}
+
 body {
     background-color: #404040;
     margin: 0px auto;
-    width: 95%;
-    max-width: 1000px;
-
+    max-width: 1100px;
 }
 
-.container {
-    margin: 10px 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 500px 300px 200px 200px;
-    grid-template-areas: 
-    "news news news news"
-    "season1 season2 season3 season4"
-    "contact contact welcome welcome"
-    "footer footer footer footer";
-    grid-row-gap: 20px; 
-    grid-column-gap: 20px;
+a {
+    color: white; 
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: "Bebas Neue", sans-serif;
 }
 
-.container_jackets {
-    margin: 10px 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 300px 100px 300px 100px 300px 100px 300px;
-    grid-template-areas: 
-        "winter_title"
-        "winter_jacket"
-        "spring_title"
-        "spring_jacket"
-        "summer_title"
-        "summer_jacket"
-        "autumn_title"
-        "autumn_jacket";
-    grid-column-gap: 20px;
-}
-
-/* NAV */
-
-header {
-    background-color: #404040;
-    
-    width: 95%;
-    max-width: 1000px;
-    margin: -10px 10px;
-    padding-top: 5px;
-    /*position: fixed;*/
-    z-index: 999;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
- 
-}
-
-.menu .logo {
-    width: 120px;
-    margin: 0px 10px;
-}
-
-.menu ul {
-    display: flex;
+li {
     list-style: none;
 }
 
-.menu ul li {
-    padding: 12px;
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.2rem;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.4rem;
 }
 
-.menu a {
-    font-family: "Bebas Neue";
-    font-size: 0.8rem;
-    letter-spacing: 0.2em;
-    color: #FFF;
-    text-transform: uppercase;
-    text-decoration: none;
-    
+.image_rule {
+    height: inherit;
+    width: inherit;
 }
 
-.menu a:hover{
-    border-bottom: 2px solid #fff;
+img {
+    display: block;
 }
 
-.menu_icons_right {
-    margin: 10px;
-    padding: 0px 10px;
+#current a {
+    color: rgba(255, 0, 0, 0.6);
+    text-decoration: underline;
+    letter-spacing: 0.1rem;
 }
 
-.menu li.current {
-    border: 2px solid rgba(255,236,219,0.6);
+/* Navigation section */ 
+.menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-around;
+    padding: 1rem;
 }
 
-#important {
-    color: red;
+.menu_links_center, .menu_icons_right {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.menu_links_center {
+    flex-grow: 2
+}
+
+.logo, .menu_icons_right {
+    flex-grow: 1;
+}
+
+.image_holder {
+}
+
+.image_holder img {
+    width: 60%;
+    height: 80%;
+    display: block;
 }
 
 
+/* HERO IMAGE */ 
 
-
-
-
-/*  Next     */
-#news {
-    margin-top: 90px;
-    background-color:#393939;
-    grid-area: news;
-    overflow: hidden;
+.hero_image {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/section_season_jacket.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#news img {
+.hero_img {
+    display: none;
+}
+
+
+/* HERO TITLE */
+
+.hero_title {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0rem;
+    text-align: center;
+}
+
+.hero_title h1 {
+    color: rgba(0,0,0, .8);
+}
+
+.hero_title a {
+    border: 2px solid rgba(0,0,0, .8);
+    width: 40%;
+    align-self: center;
+    margin-top: 5px;
+}
+
+
+/* Collection by season */ 
+
+.jackets_wrapper {
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jackets_choice h1{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: top left;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
 }
 
-/* SEASON PICKS and CARDS */
-
-.nested_cards {
-    background-color: rgba(255,236,219,0.6);
-    border-radius: 4px;
-    box-shadow: 2px 2px 6px 0px rgba(255,236,219,0.5);
-    text-align: center;
-    
+#winter, #spring, #summer, #autumn {
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.nested_cards h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #fff;
-    padding-top: 10px;
+#winter {
+    background-image: url(../images/season_pick_winter.jpg);
 }
 
-.nested_cards p {
-    font-family: "Monteserrat", sans-serif;
-    font-size: 12px;
-    color:#f1f1f1;
-    padding: 20px 12px 0px 12px;
+#spring {
+    background-image: url(../images/season_pick_spring.jpg);
 }
 
-.nested_cards .btn {
-    margin-left: 50%;
+#summer {
+    background-image: url(../images/season_pick_winter.jpg);
 }
 
-.nested_cards a {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 1.4px;
-    text-decoration: none;
-    color: #fff;
-    background-color: rgba(0,0,0,0.1);
-    padding: 2px 4px 1px 4px;
-    border-radius: 2px;
-    transition: 0.3s;
+#autumn {
+    background-image: url(../images/season_pick_spring.jpg);
 }
-
-.nested_cards a:hover {
-    background-color: rgba(0,0,0,0.4);
-
-}
-
-
-#season1 {
-    grid-area: season1;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40% 50% 10%;
-}
-
-#season1 img {
-    width:100%;
-    height:100%;
-    object-fit: cover;
-}
-
-
-#season2 {
-    grid-area: season2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40% 50% 10%;
-}
-
-#season2 img {
-    width:100%;
-    height:100%;
-    object-fit: cover;
-}
-
-
-
-#season3 {
-    grid-area: season3;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40% 50% 10%;
-}
-
-#season3 img {
-    width:100%;
-    height:100%;
-    object-fit: cover;
-}
-
-#season4 {
-    grid-area: season4;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40% 50% 10%;
-}
-
-#season4 img {
-    width:100%;
-    height:100%;
-    object-fit: cover;
-}
-
-
-
-
-
-
-/* CONTACT FORM */
-#contact {
-    grid-area: contact;
-}
-
-#contact h2 {
-    font-family: "Bebas Neue", sans-serif;
-
-    font-weight: 300;
-    color: #fff;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-    text-align: left;
-    padding-top: 10px;
-}
-
-.contact_us {
-    margin-top: 10px;
-    background-color:  rgba(255,236,219,0.5);
-    border-radius: 10px;
-    padding: 30px;
-    align-content: center;
-}
-
-.contact_form_items {
-    display:flex;
-    flex-direction: column;
-    width: 90%;
-    align-content: center;
-    outline: none;
-    height: 100%;
-}
-
-.contact_form_items .item, textarea {
-    border: none;
-    border-bottom: 2px solid rgba(255,255,255, 0.4);
-    color:#fff;
-    background-color: transparent;
-    margin: 10px 0px;
-    
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    letter-spacing: 1px;
-}
-
-
-
-::placeholder {
-    color: #fff;
-    opacity: 1; /*firefox*/
-}
-
-
-.contact_us .btn button {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 1.4px;
-    text-decoration: none;
-    color: #fff;
-    background-color: rgba(0,0,0,0.1);
-    padding: 2px 4px 1px 4px;
-    border: none;
-    border-radius: 2px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.contact_us .btn button:hover {
-    background-color: rgba(0,0,0,0.4);
-
-}
-
-
-
-
-
-
-
-/* WELCOME and ABOUT */
-
-#welcome {
-    grid-area: welcome;
-}
-
-#welcome h2{
-    font-weight: 300;
-    color: #fff;
-    letter-spacing: 4px;
-    margin-bottom: 5px;
-    text-decoration: underline;
-    text-align: left;
-    padding-top: 10px;
-}
-
-
 
 
 /* FOOTER */
-main {
-    height: 100vh;
-}
+
 footer {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    padding: 30px;
-    background-color: rgba(255,236,219,0.5);
-    border-radius: 10px;
-    margin: 20px 20px;
-}
-
-.footer h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    letter-spacing: 1px;
-    color: #fff;
-}
-
-.footer ul li {
-    list-style: none;
-}
-.footer a {
-    font-family: "Monteserrat", sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    text-decoration: none;
-    color: #fff;
-}
-
-.footer p {
-    color:#fff;
-    font-family: "Monteserrat", sans-serif;
-    font-weight: 300;
-    font-size: 10px;
-}
-
-.footer_left {
-    flex: 1;
-}
-
-.address_container {
-    margin-bottom: 10px;;
-}
-
-.footer_left .social li{
-    display: inline-block;
-    padding-right: 5px;
-    color: #fff;
-}
-
-.footer_center {
-    flex: 1;
-}
-
-.footer_center .link_items {
-    height: 100%;
-}
-
-
-
-.footer_right {
-    flex: 1;
-}
-
-.footer_right img {
-    width: 80%;
-    padding-top: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Cart items */
-
-main {
-    margin: 20px auto;
-}
-
-table {
     width: 100%;
-    border-collapse: collapse;
-}
-
-
-
-
-
-
-
-
-/* SIGN UP */
-
-
-
-h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    letter-spacing: 2px;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.sign_up {
-    max-height: 100vh;
+    height: 250px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
     display: flex;
+    justify-content: center;
 }
 
-.input_area {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 10% auto;
-    
-}
-
-
-
-
-
-
-
-
-
-
-/*********************Jackets************************/
-
-
-
-
-
-
-#winter_title {
-    grid-area: winter_title;
-}
-
-#winter_jacket {
-    grid-area: winter_jacket;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#winter_jacket img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#spring_title {
-    grid-area: spring_title;
-}
-#spring_jacket {
-    grid-area: spring_jacket;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-#summer_title {
-    grid-area: summer_title;
-}
-#summer_jacket {
-    grid-area: summer_jacket;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70% 30%;
-}
-#autumn_title {
-    grid-area: autumn_title;
-}
-#autumn_jacket {
-    grid-area: autumn_jacket;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70% 30%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MAKING IT RESPONSIVE */
-
-
-@media only screen and (max-width: 768px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 500px 300px 300px 400px 400px 200px;
-        grid-template-areas: 
-            "news news"
-            "season1 season2"
-            "season3 season4"
-            "contact contact"
-            "welcome welcome"
-            "footer footer";
-    }
-}
-
-
-@media only screen and (max-width: 550px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 500px repeat(4, 300px) 400px 400px 200px;
-        grid-template-areas: 
-            "news"
-            "season1"
-            "season2"
-            "season3"
-            "season4"
-            "contact"
-            "welcome"
-            "footer";
-    }
-}
-
-/*
-body {
-    background-image: linear-gradient(to bottom right, #404040, #303030, #202020);
-    width:100vw;
-    height:100vh;
-    
-}
-
-*/
-/* NAV 
-.menu {
+.footer_wrapper {
+    width: 95%;
     display: flex;
     justify-content: space-between;
+    border: 1px solid rgba(0,0,0, .8)
+}
+
+/* Footer - Newsletter */ 
+
+.letter_signon, .quick_links, .contact_details {
+    background: green;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 80px;
- 
 }
 
-.menu .logo {
-    width: 120px;
-    margin-left: 10px;
+.letter_signon h3, .email, .button {
+    margin: 10px 0px;
 }
 
-.menu ul {
-    display: flex;
-    list-style: none;
-}
-
-.menu ul li {
-    padding: 10px;
-}
-
-.menu a {
-    font-family: "Bebas Neue";
-    font-size: 0.8rem;
-    letter-spacing: 0.2em;
-    color: #FFF;
-    text-transform: uppercase;
-    text-decoration: none;
-    
-}
-
-.menu a:hover{
-    border-bottom: 2px solid #fff;
-}
-
-.menu li.current {
-    border: 2px solid rgba(255,236,219,0.6);
-}
-
-#important {
-    color: #404040;
-}
-
-@media screen and (max-width:959px) {
+.letter_signon h3 {
 
 }
-
-*/
-
-
-/* FOOTER 
-
-footer {
-    margin-top: 
+.email, .button {
+    width: 60%;
 }
 
-.container-footer {
-    background-color: #404040;
-    opacity: 80%;
-    height: 300px;
-    margin: 0px 5px;
-    display: flex;
+/* Footer - links */ 
 
-}
-
-.footer-visual {
-    display: flex;
+.quick_links {
     flex: 1;
 }
 
-*/
-/* SIGN UP FORM
-h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    letter-spacing: 2px;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
+
+
+/* Footer - contact */ 
+
+.contact_details {
+    flex: 1;
 }
 
-.sign_up {
-    max-width: 500px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 20px;
-    margin:  100px auto;
-    background-color: rgba(0,0,0,.4);
-    border-radius: 20px;
+
+
+
+
+
+
+/* MEDIA QUERIES */ 
+
+@media only screen and (max-width: 800px) {
+    /*.menu_links_center, .menu_icons_right {
+        display: none;
+    }*/
+
+    .menu {
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .menu_icons_right, .menu_links_center {
+        margin-top: 1rem;
+    }
+
+    .menu_links_center {
+        width: 80%;
+    }
+
+    .menu_icons_right {
+        width: 40%;
+    }
+
+
+    /* IMAGE */ 
+
+    .image_holder {
+        display: flex;
+        width: 30%;
+    }
+
+    .hero_image {
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .hero_img {
+        display: flex;
+        width: 60%;
+    }
+
+    .hero_img img {
+        width: 100%;
+    }
+
+
+    footer {
+        height: auto;
+    }
+
+    .footer_wrapper {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
     
-
-}
-
-.container_information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0px;
-    gap: 6px;
-    margin: 20px 20px;
-    border: 2px solid #fff;
-}
-
-.container_information input {
-    width: 80%;
-    padding: 4px 4px;
-    outline: none;
-    border-radius: 10px;
     
-    
-}
+    .jackets_wrapper {
+        height: 400px;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+    }
 
-.btn {
-    display: flex;
-    align-self: center;
-    margin-bottom: 20px;
-}
-
-.btn button {
-    padding: 5px 10px;
-    cursor: pointer;
-}
-*/
-
-
-
-
-
-
-
-/*
-.season_cards {
-    display: grid;
-    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
-    grid-gap: 40px;
-    padding: 60px 0px;
-}
-
-.cards_container {
-    grid-column: 2 / span 12 ;
-    display: grid;
-    grid-template-columns: repeat(12, minmax(auto, 60px));
-    grid-gap: 40px;
-}
-
-.season_pick {
-    grid-column-end: span 3;
-    display: flex;
-    flex-direction: column;
-    background-color: #ecf0f1;
-    cursor: pointer;
-}
-
-.image {
-    width: 100%;
-    padding-top: 56.25%;
-    overflow: hidden;
-    position: relative;
-
-}
-
-.image img {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.information {
-    padding: 20px;
-}
-
-.information .title {
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: flex;
-    margin-left: auto;
-    padding-right: 20px;  
-}
-.information h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    
-}
-
-.information p {
-    font-family: "Monteserrat", sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-}
-
-.btn a {
-    text-decoration: none;
-    font-family: "Monteserrat", sans-serif;
-    font-weight: 400;
-    font-size: 10px;
-    letter-spacing: 2px;
-    color: #000;
-    background-color: grey;
-    padding: 5px 5px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-
-@media only screen and (max-width: 1000px) {
-    .season_pick {
-        grid-column-end: span 6;
+    .jackets_wrapper article {
+        max-height: 85px;
     }
 }
 
 
-@media only screen and (max-width: 700px) { 
-    .season_pick {
-        grid-column-end: span 12;
+@media only screen and (max-width: 400px) {
+    .menu a {
+        font-size: 1rem;
     }
 }
-
-*/
-
-
-
-
